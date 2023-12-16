@@ -15,6 +15,7 @@ int main() {
 		if (f(a) * f(c) > 0) a = c;
 		else b = c;
 		++iter;
+		cout << "c = " << c << endl;
 	} while (abs(a - b) > E);
 
 	cout << "x = " << c << endl << "Количество итераций: " << iter;
