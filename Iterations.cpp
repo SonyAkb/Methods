@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <cmath>
 using namespace std;
 
@@ -10,7 +10,7 @@ int main() {
 	double x, x0, E = pow(10, -6);
 	int a = 1, b = 2, iter = 0;
 
-	cout << "Óðàâíåíèå:   x - 2 + sin(1 / x) = 0" << endl;
+	cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ:   x - 2 + sin(1 / x) = 0" << endl;
 
 	if (abs(Fp(b)) < 1) {
 		
@@ -19,12 +19,12 @@ int main() {
 			++iter;
 			x0 = x;
 			x = G(x0);
-			cout << "Èòåðàöèÿ " << iter << ": " << x << endl;
+			cout << "Ð˜Ñ‚ÐµÑ€Ð°Ñ†Ð¸Ñ " << iter << ": " << x << endl;
 		} while (abs(x - x0) > E);
 		cout << "------------" << endl;
-		cout << "x = " << x << endl << "Êîëè÷åñòâî èòåðàöèé: " << iter;
+		cout << "x = " << x << endl << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¸Ñ‚ÐµÑ€Ð°Ñ†Ð¸Ð¹: " << iter;
 	}
-	else cout << "Ñîñòàâëåííàÿ ôóíêöèÿ íå ïîäõîäèò äëÿ ðåøåíèÿ";
+	else cout << "Ð¡Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð½Ð°Ñ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ Ð½Ðµ Ð¿Ð¾Ð´Ñ…Ð¾Ð´Ð¸Ñ‚ Ð´Ð»Ñ Ñ€ÐµÑˆÐµÐ½Ð¸Ñ";
 	return 0;
 }
 
