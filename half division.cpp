@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <cmath>
 using namespace std;
 
@@ -9,7 +9,7 @@ double f(double x) {
 int main() {
 	setlocale(LC_ALL, "Russian");
 	double E = pow(10, -6), a = 1, b = 2, c, iter = 0;
-	cout << "Óðàâíåíèå:   x - 2 + sin(1 / x) = 0" << endl;
+	cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ:   x - 2 + sin(1 / x) = 0" << endl;
 	do {
 		c = (a + b) / 2;
 		if (f(a) * f(c) > 0) a = c;
@@ -17,6 +17,6 @@ int main() {
 		++iter;
 	} while (abs(a - b) > E);
 
-	cout << "x = " << c << endl << "Êîëè÷åñòâî èòåðàöèé: " << iter;
+	cout << "x = " << c << endl << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¸Ñ‚ÐµÑ€Ð°Ñ†Ð¸Ð¹: " << iter;
 	return 0;
 }
