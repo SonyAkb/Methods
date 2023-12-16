@@ -2,17 +2,9 @@
 #include <cmath>
 using namespace std;
 
-double f(double x) {
-	return x - 2 + sin(1 / x);
-}
-
-double fp1(double x) {
-	return 1 - (cos(1 / x)) / pow(x, 2);
-}
-
-double fp2(double x) {
-	return (2 * x * cos(1 / x) - sin(1 / x)) / pow(x, 4);
-}
+double f(double x);
+double fp1(double x);
+double fp2(double x);
 
 int main() {
 	setlocale(LC_ALL, "Russian");
@@ -37,4 +29,16 @@ int main() {
 	}
 	else cout << "Нет решений";
 	return 0;
+}
+
+double f(double x) {
+	return x - 2 + sin(1 / x);
+}
+
+double fp1(double x) {
+	return 1 - (cos(1 / x)) / pow(x, 2);
+}
+
+double fp2(double x) {
+	return (2 * x * cos(1 / x) - sin(1 / x)) / pow(x, 4);
 }
